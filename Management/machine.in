@@ -1,0 +1,7 @@
+{ "tenantId" : 12345, 
+  "machineSpec" : [ 
+  	{ "state" : "START", "transitions" : ["pending", "submitted"] },  
+	{ "state" : "pending", "transitions" : ["PENDING", "cancelled", "submitted"] }, 
+	{ "state" : "submitted", "transitions" : ["cancelled", "submitted", "backordered", "fulfilled"] },
+	{ "state" : "backordered", "transitions" : ["backordered" ,"cancelled", "fulfilled"] }
+] }  
